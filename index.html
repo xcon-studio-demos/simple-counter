@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>XCON Widget</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<simple-counter></simple-counter>
+
+<script>
+    window.__XCONS_LOGGER_CONFIG__ = {
+        '@xcons/widget': {
+            enabled: true,
+            level: 3,  // WARN level (0=ERROR, 1=WARN, 2=INFO, 3=DEBUG, 4=TRACE)
+            prefix: 'WIDGET',
+            timestamp: true,
+            colors: true
+        },
+        '@xcons/ui-dialogs': {
+            enabled: true,
+            level: 3,  // WARN level (0=ERROR, 1=WARN, 2=INFO, 3=DEBUG, 4=TRACE)
+            prefix: 'UI_DIALOG',
+            timestamp: true,
+            colors: true
+        }
+    };
+</script>
+
+<script type="module">
+    import './src/app.bootstrap';
+</script>
+
+</body>
+</html>

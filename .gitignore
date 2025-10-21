@@ -1,0 +1,7 @@
+/package-lock.json
+/node_modules
+/dist
+/.npmrc
+/build-and-copy.ps1
+/.idea
+/.vscode

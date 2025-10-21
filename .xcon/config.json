@@ -1,0 +1,33 @@
+{
+  "configurations": {
+    "provider": "web"
+  },
+  "build": {
+    "debug": true,
+    "entry": "app.bootstrap.ts",
+    "sourceRoot": "src",
+    "outputFilename": "widget.js",
+    "outputPath": "dist",
+    "tsConfig": "tsconfig.app.json",
+    "externals": {
+      "@xcons/common": "XConsCommon",
+      "@xcons/core": "XConsCore",
+      "@xcons/widget": "XConWidgets"
+    }
+  },
+  "pack": {
+    "name": "@myorg/simple-counter",
+    "version": "1.0.0",
+    "description": "simple-counter web widget",
+    "author": "",
+    "license": "MIT",
+    "keywords": [
+      "widget",
+      "xcons",
+      "web"
+    ]
+  },
+  "data": {},
+  "projectType": "widget",
+  "version": "1.0"
+}

@@ -6,7 +6,7 @@ import {Widget, xproperty} from "@xcons/widget";
     widgetVersion: '1.0.0',
     selector: 'simple-counter',
     templateUrl: './app.html',
-    styleUrls: ['./app.css'],
+    styleUrls: ['./app.scss'],
     initMode: "auto",
     encapsulation: 'component'
 })

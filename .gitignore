@@ -2,6 +2,6 @@
 /node_modules
 /dist
 /.npmrc
-/build-and-copy.ps1
+/build.ps1
 /.idea
 /.vscode

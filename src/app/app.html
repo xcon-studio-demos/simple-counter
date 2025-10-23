@@ -1,5 +1,7 @@
-<div class="container">
-    <p x:text="count"></p>
-    <button x:on:click="increment">Increment</button>
-    <button x:on:click="decrement">Decrement</button>
+<div class="xcon-flex xcon-flex-col xcon-items-center xcon-gap-lg">
+    <p class="xcon-text-4xl xcon-text-primary xcon-font-bold xcon-m-0" x:text="count"></p>
+    <div class="xcon-flex xcon-gap-md">
+        <button x:on:click="increment" class="xcon-btn xcon-btn-primary">Increment</button>
+        <button x:on:click="decrement" class="xcon-btn xcon-btn-danger">Decrement</button>
+    </div>
 </div>
